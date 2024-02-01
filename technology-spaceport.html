@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+ <link rel="stylesheet" href="/technology.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Space Tourism | Technology</title>
+  <style>
+    .numbers ul li:nth-child(2){
+    background-color: white;
+    color: black;
+}
+.numbers ul li:nth-child(2) a {
+    color: black;
+}
+</style>
+</head>
+<body>
+  <main>
+    <div class="bars-icon">
+      <i class="fas fa-bars" onclick="showSideBar()"></i>
+    </div>
+    <nav>
+      <hr>
+      <img src="" alt="">
+      <div class="cancel-icon">
+        <i class="fas fa-times" onclick="hideSideBar()"></i>
+      </div>
+      <ul>
+        <li><a href="/index.html"><span>00</span> Home</a> </li>
+        <li><a href="/destination-titan.html"><span>01</span> Destination</a></li>
+        <li><a href="/crew-specialist.html"><span>02</span> Crew</a></li>
+        <li><a href="/technology-capsule.html"><span>03</span> Technology</a></li>
+      </ul>
+    </nav>
+    <h4><span>03</span>Space launch 101</h4> 
+    <section>
+  <div class="numbers">
+  <ul>
+    <li><a href="/technology-vehicle.html">1</a></li>
+    <li><a href="/technology-spaceport.html">2</a></li>
+    <li><a href="/technology-capsule.html">3</a></li>
+  </ul>
+  </div>
+  <div class="text-container">
+    <h3>The terminology...</h3>
+    <h1>Spaceport</h1> 
+   
+    <p class="paragraph">
+      A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+      by analogy to the seaport for ships or airport for aircraft. Based in the 
+      famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+      of the Earth’s rotation for launch.
+    </p> 
+  </div>
+   <div class="image">
+    <img src="/assets/technology/image-spaceport-portrait.jpg" class="portrait" alt="">
+    <img src="/assets/technology/image-spaceport-landscape.jpg" class="landscape" alt="">
+   </div>
+  </section>
+  </main>
+  <script>
+    function showSideBar() {
+      const nav = document.querySelector('nav');
+      nav.classList.add('visible'); // Add a class to make it visible
+  }
+  
+  function hideSideBar() {
+      const nav = document.querySelector('nav');
+      nav.classList.remove('visible'); // Remove the class to hide it
+  }
+  
+  
+  </script>
+</body>
+</html>

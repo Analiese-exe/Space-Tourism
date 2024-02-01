@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="/destination.css">
+  <title>Frontend Mentor | Space tourism website</title>
+  <style>
+  li:nth-child(2), li:hover, li:active {
+    border-bottom: 1px solid white;
+    transition: 0.3s ease-in-out;
+}
+li:nth-child(4){
+  border-bottom: none;
+}
+.text-container nav ul li{
+  border-bottom: none;
+}
+.text-container nav ul li:hover{
+  border-bottom: 1px solid white;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.text-container nav ul li:nth-child(3){
+  border-bottom: 2px solid white;
+}
+.text h1{
+  font-size: 4.3em;
+}
+@media (max-width: 400px){
+  .text h1{
+  font-size: 2.3em;
+}
+}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="bars-icon">
+      <i class="fas fa-bars" onclick="showSideBar()"></i>
+    </div>
+    <nav>
+      <hr>
+      <img src="" alt="">
+      <div class="cancel-icon">
+        <i class="fas fa-times" onclick="hideSideBar()"></i>
+      </div>
+      <ul>
+        <li><a href="/index.html"><span>00</span> Home</a> </li>
+        <li><a href="/destination-titan.html"><span>01</span> Destination</a></li>
+        <li><a href="/crew-specialist.html"><span>02</span> Crew</a></li>
+        <li><a href="/technology-capsule.html"><span>03</span> Technology</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h4><span>01</span> Pick your destination</h4>
+      <div class="image">
+        <img src="/assets/destination/image-europa.png" alt="">
+      </div>
+      <div class="text-container">
+        <nav>
+          <ul>
+            <li><a href="/destination-moon.html">Moon</a></li>
+        <li><a href="/destination-mars.html">Mars</a></li>
+        <li><a href="/destination-europa.html">Europa</a></li>
+        <li><a href="/destination-titan.html">Titan</a></li>
+          </ul>
+        </nav>
+        <div class="text">
+          <h1>Europa</h1> 
+          <p class="paragraph">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+            ice skating, curling, hockey, or simple relaxation in your snug 
+            wintery cabin.
+          </p>
+          <hr>
+          <div class="details">
+            <div>
+              <span>Avg. distance</span>
+              <span class="detail">628 mil. km</span>
+            </div>
+            <div>
+              <span>Est. travel time</span>
+              <span class="detail">3 years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function showSideBar() {
+      const nav = document.querySelector('nav');
+      nav.classList.add('visible'); // Add a class to make it visible
+  }
+  
+  function hideSideBar() {
+      const nav = document.querySelector('nav');
+      nav.classList.remove('visible'); // Remove the class to hide it
+  }
+  </script>
+</body>
+</html>

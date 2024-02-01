@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+ <main>
+  <div class="bars-icon">
+    <i class="fas fa-bars" onclick="showSideBar()"></i>
+  </div>
+  <nav>
+    <hr>
+    <img src="" alt="">
+    <div class="cancel-icon">
+      <i class="fas fa-times" onclick="hideSideBar()"></i>
+    </div>
+   <ul>
+   <li><a href="/index.html"><span>00</span> Home</a> </li>
+    <li><a href="/destination-titan.html"><span>01</span> Destination</a></li>
+    <li><a href="/crew-specialist.html"><span>02</span> Crew</a></li>
+    <li><a href="/technology-capsule.html"><span>03</span> Technology</a></li>
+   </ul>
+  </nav>
+  <section>
+    <div>
+      <h4>So, you want to travel to</h4> 
+      <h1>Space</h1>
+     <p class="paragraph"> Let’s face it; if you want to go to space, you might as well genuinely go to 
+      outer space and not hover kind of on the edge of it. Well sit back, and relax 
+      because we’ll give you a truly out of this world experience!</p>
+    </div>
+  
+    <p class="Explore">Explore</p>
+  </section>
+ </main>
+ <script>
+  function showSideBar() {
+    const nav = document.querySelector('nav');
+    nav.classList.add('visible'); // Add a class to make it visible
+}
+
+function hideSideBar() {
+    const nav = document.querySelector('nav');
+    nav.classList.remove('visible'); // Remove the class to hide it
+}
+
+
+</script>
+</body>
+</html>
