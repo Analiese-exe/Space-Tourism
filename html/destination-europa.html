@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="/destination.css">
-  <title>Space Tourism | Mars</title>
+  <title>Frontend Mentor | Space tourism website</title>
   <style>
-   
-   li:nth-child(2), li:hover, li:active {
+  li:nth-child(2), li:hover, li:active {
     border-bottom: 1px solid white;
     transition: 0.3s ease-in-out;
 }
@@ -27,8 +26,16 @@ li:nth-child(4){
   transition: 0.3s ease-in;
   cursor: pointer;
 }
-.text-container nav ul li:nth-child(2){
+.text-container nav ul li:nth-child(3){
   border-bottom: 2px solid white;
+}
+.text h1{
+  font-size: 4.3em;
+}
+@media (max-width: 400px){
+  .text h1{
+  font-size: 2.3em;
+}
 }
   </style>
 </head>
@@ -46,14 +53,14 @@ li:nth-child(4){
       <ul>
         <li><a href="/index.html"><span>00</span> Home</a> </li>
         <li><a href="/destination-titan.html"><span>01</span> Destination</a></li>
-        <li><a href="/crew-specialist.html"><span>02</span> Crew</a></li>
+        <li><a href="//html/crew-specialist.html"><span>02</span> Crew</a></li>
         <li><a href="/technology-capsule.html"><span>03</span> Technology</a></li>
       </ul>
     </nav>
     <section>
       <h4><span>01</span> Pick your destination</h4>
       <div class="image">
-        <img src="/assets/destination/image-mars.webp" alt="">
+        <img src="/assets/destination/image-europa.png" alt="">
       </div>
       <div class="text-container">
         <nav>
@@ -65,21 +72,22 @@ li:nth-child(4){
           </ul>
         </nav>
         <div class="text">
-          <h1>Mars</h1> 
+          <h1>Europa</h1> 
           <p class="paragraph">
-            Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-            the tallest planetary mountain in our solar system. It’s two and a half times 
-            the size of Everest!
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+            ice skating, curling, hockey, or simple relaxation in your snug 
+            wintery cabin.
           </p>
           <hr>
           <div class="details">
             <div>
               <span>Avg. distance</span>
-              <span class="detail">225 mil. km</span>
+              <span class="detail">628 mil. km</span>
             </div>
             <div>
               <span>Est. travel time</span>
-              <span class="detail">9 months</span>
+              <span class="detail">3 years</span>
             </div>
           </div>
         </div>
@@ -96,8 +104,6 @@ li:nth-child(4){
       const nav = document.querySelector('nav');
       nav.classList.remove('visible'); // Remove the class to hide it
   }
-  
-  
   </script>
 </body>
 </html>
